@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --navbar-height:59px;
+
+}
+#navbar{
+    display: flex;
+    align-items: center;
+
+}
+
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+#navbar ul {
+    display: flex;
+    
+}
+
+
+#navbar ul li{
+    /*color:white*/
+    list-style: none;
+    font-size: 1.3rem;
+    
+}
+#navbar ul li a {
+    
+
+    display: block;
+    padding: 3px 22px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: blue;
+    background-color:red;
+
+    
+
+    
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: " ";
+    position: absolute;
+    background: url(bgfood.jpg) no-repeat center center/cover;
+    
+    height: 100%;
+    width: 100%;
+    
+    left: 0;
+    z-index: -1;
+    opacity: 100;
+
+}
+#home h1{
+    color: darkblue;
+    text-align: center;
+    font-family: 'bree serif',serif;
+    
+
+}
+#home p{
+    color: rgb(235, 0, 247);
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'bree serif',serif;
+    
+}
+#services{
+    margin: 34px;
+    display: flex;
+
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 6px;
+
+    border-radius: 30px;
+    background-color: rgb(133, 138, 206);
+
+    
+}
+#services .box :hover{
+    background-color: rgb(141, 198, 216);
+    cursor: pointer;
+
+    
+    
+}
+
+#services .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+
+ 
+#client-section{
+    position: relative;
+    
+
+
+}
+
+    #clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clients-item{
+    padding: 20px;
+
+    
+    
+}
+#clients img{
+    height: 200px;
+    
+}
+
+#clients-section::before{
+    content: " ";
+    position: absolute;
+    background: url('logol3.jpg') ;
+    height: 44.09%;
+    width: 100%;
+  
+    z-index: -1;
+    opacity: 0.89;
+
+    
+}
+#contact{
+    position: relative;
+
+
+}
+.contact-box{
+    text-align: center;
+margin: auto;
+display: block;
+
+}
+footer{
+    background-color: black;
+    color: aliceblue;
+    padding: 9px 20px;
+}
+
+#contact::before{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background:transparent;
+
+    background-color: rgb(189, 131, 193);
+    
+}
+#contact{
+    
+}
+
+
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px ;
+    color: rgb(174, 0, 255);
+}
+.h-secodary{
+    font-size: 2.8rem;
+    padding: 12px ;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px  black;
+    background-color: rgb(251, 193, 0);
+    margin: 17px;
+    font-size: 1.3rem;
+    border-radius: 100px;
+    cursor: pointer;
+}
+  .center{
+    text-align: center;
+  }
+  .center button:hover{
+
+   background-color:  rgb(146, 50, 202);
+  }
+
+  @media only screen and (max-width: 1200px) {
+
+
+
+#services{
+    flex-direction: column;
+}
+
+#navbar{
+    flex-direction: column;
+}
+#navbar ul li a{
+    font-size: 1rem;
+    padding: 0px  3px;
+}
+#home{
+
+    height: 370px;
+    padding: 3px 68px;
+
+
+}
+#home::before{
+
+    height: 480px;
+
+
+}
+#home p{
+
+font-size: 13px;
+
+}
+
+.h-primary{
+    font-size: 26px;
+}
+
+.btn{
+    font-size: 13px;
+    padding: 4px 8px;
+}
+.services-container{
+    align-items: center;
+
+}
+#clients{
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+#clients img {
+    width: 66px;
+    padding: 2px 2px;
+    height: auto;
+
+}
+#contact-box form{
+    width: 60%;
+}
+
+#services .box{
+    padding: 14px;
+    margin:2px 0px ;
+    
+    margin-bottom: 20px;
+}
+  }
